@@ -1,26 +1,20 @@
-import styled from 'styled-components';
+import styled from "styled-components/native";
+import theme from "../../styles/themes/default";
+import { RFValue } from "react-native-responsive-fontsize";
 
-.header {
-  background: var(--gray-700);
-  display: flex;
+export const Container = styled.View`
+  background-color: ${theme.colors["gray-700"]};
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 12.5rem;
-  padding: 1.25rem;
-}
+`;
 
-.header img {
-  width: 28px;
-  height: 40px;
-  padding-right: 3px;
-}
+// export const TextTo = styled.Text`
+//   color: ${theme.colors.blue};
+//   font-size: ${RFValue(32)}px;
+// `;
 
-.to {
-  color: var(--blue);
-  font-size: 2.5rem;
-}
-
-.do {
-  color: var(--purple-dark);
-  font-size: 2.5rem;
-}
+// export const TextDo = styled.Text`
+//   color: ${theme.colors.purpleDark};
+//   font-size: ${RFValue(32)}px;
+// `;
